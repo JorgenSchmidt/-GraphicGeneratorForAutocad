@@ -1,0 +1,29 @@
+﻿<Window x:Class="GraphicGeneratorForAutocad.Views.DialogWindow_Carotage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicGeneratorForAutocad.ViewModels"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Title="Ввод параметров пласта для моделирования гравитационной аномалии" Height="300" Width="590" ResizeMode="NoResize">
+    <Window.DataContext>
+        <local:DialogWIndow_CarotageViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Rectangle Stroke="Black" Fill="LightGray"/>
+        <Label Margin="10,10,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Расположение нулевой точки координат в среде Autocad: "/>
+        <Label Margin="10,40,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Х: "/>
+        <TextBox Margin="40,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="320,40,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="У: "/>
+        <TextBox Margin="350,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="10,80,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Информационная панель: "/>
+        <TextBox Margin="10,110,0,0" Height="30" Width="540" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="10,150,0,0" Height="30" Width="580" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Путь до файла .txt нужного формата данных (получить справку по нажатию кнопки 'справка'): "/>
+        <TextBox Margin="10,180,0,0" Height="30" Width="540" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Margin="10,230,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
+        <Button Margin="270,230,0,0" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Справка" />
+        <Button Command="{Binding Close}" Margin="450,230,0,0" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Закрыть окно" />
+    </Grid>
+</Window>

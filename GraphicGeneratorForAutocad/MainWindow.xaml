@@ -1,0 +1,28 @@
+﻿<Window x:Class="GraphicGeneratorForAutocad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicGeneratorForAutocad"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Graphic generator for Autocad" Height="450" Width="1200" ResizeMode="NoResize">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <!-- Блок описания button элементов для взаимодействия с соответствующими диалоговыми окнами -->
+        <Button Command="{Binding GravityAnomaly_Sphere}" Margin="10,10,0,0" Height="50" Width="610" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд для отрисовки графика гравитационной аномалии для шара." />
+        <Button Command="{Binding GravityAnomaly_Ledge}" Margin="10,70,0,0" Height="50" Width="610" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд для отрисовки графика гравитационной аномалии для уступа." />
+        <Button Command="{Binding MagneticAnomaly_Sphere}" Margin="10,130,0,0" Height="50" Width="610" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд для отрисовки графика геомагнитной аномалии для шара." />
+        <Button Command="{Binding MagneticAnomaly_Formation}" Margin="10,190,0,0" Height="50" Width="610" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд для отрисовки графика геомагнитной аномалии для пласта беск. простирания" />
+        <Button Command="{Binding ElectricAnomaly_Point}" Margin="10,250,0,0" Height="50" Width="610" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд для отрисовки графика точечного источника постоянного тока" />
+        <Button Command="{Binding Carotage}" Margin="10,310,0,0" Height="50" Width="610" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд для отрисовки каротажной диаграмы" />
+
+        <!-- Блок описания элементов вывода информации: готового набора команд для отрисовки графиков и информационной дебаг-панели -->
+        <Label Margin="640,3,0,0" Height="30" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Информационная панель: "/>
+        <TextBox Text="{Binding InfoPanel}" Margin="640,30,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True"/>
+        <Label Margin="640,63,0,0" Height="30" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Вывод: "/>
+        <TextBox Text="{Binding Output}" Margin="640,90,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True"/>
+    </Grid>
+</Window>
