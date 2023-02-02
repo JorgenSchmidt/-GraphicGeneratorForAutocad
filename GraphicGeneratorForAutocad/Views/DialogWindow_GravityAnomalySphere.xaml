@@ -15,18 +15,18 @@
         <Rectangle Stroke="Black" Fill="LightGray"/>
         <Label Margin="10,10,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Расположение нулевой точки координат в среде Autocad: "/>
         <Label Margin="10,40,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Х: "/>
-        <TextBox Margin="40,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding Coord_X}" Margin="40,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="260,40,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="У: "/>
-        <TextBox Margin="290,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding Coord_Y}" Margin="290,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="10,80,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания центра шара: "/>
-        <TextBox Margin="10,110,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding SphereDepth}" Margin="10,110,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="10,150,0,0" Height="30" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Диаметр шара: "/>
-        <TextBox Margin="10,180,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding SphereRadius}" Margin="10,180,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="10,220,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость центра шара от нулевой точки измерения: "/>
-        <TextBox Margin="10,250,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding DistanceFromZeroPoint}" Margin="10,250,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="10,290,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Разница между плотностью шара и вмещающей среды: "/>
-        <TextBox Margin="10,320,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Margin="10,370,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
+        <TextBox Text="{Binding DensitiesDifference}" Margin="10,320,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Command="{Binding Calculate}" Margin="10,370,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
         <Button Command="{Binding Close}" Margin="390,370,0,0" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Закрыть окно" />
     </Grid>
 </Window>

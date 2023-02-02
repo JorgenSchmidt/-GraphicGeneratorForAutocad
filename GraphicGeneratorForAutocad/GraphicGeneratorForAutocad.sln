@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicGeneratorForAutocad", "GraphicGeneratorForAutocad.csproj", "{7DC78FDF-82F5-4383-9C17-12DE32903A63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphicGeneratorForAutocad", "GraphicGeneratorForAutocad.csproj", "{7DC78FDF-82F5-4383-9C17-12DE32903A63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicGeneratorForAutocad_Model", "..\GraphicGeneratorForAutocad_Model\GraphicGeneratorForAutocad_Model.csproj", "{86893F8B-B643-46BA-A532-5F8D9B904BCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicGeneratorForAutocad_Core", "..\GraphicGeneratorForAutocad_Core\GraphicGeneratorForAutocad_Core.csproj", "{C5DC5532-0B25-4611-94C2-9220B606FA0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{7DC78FDF-82F5-4383-9C17-12DE32903A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DC78FDF-82F5-4383-9C17-12DE32903A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DC78FDF-82F5-4383-9C17-12DE32903A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86893F8B-B643-46BA-A532-5F8D9B904BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86893F8B-B643-46BA-A532-5F8D9B904BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86893F8B-B643-46BA-A532-5F8D9B904BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86893F8B-B643-46BA-A532-5F8D9B904BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DC5532-0B25-4611-94C2-9220B606FA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DC5532-0B25-4611-94C2-9220B606FA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DC5532-0B25-4611-94C2-9220B606FA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DC5532-0B25-4611-94C2-9220B606FA0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

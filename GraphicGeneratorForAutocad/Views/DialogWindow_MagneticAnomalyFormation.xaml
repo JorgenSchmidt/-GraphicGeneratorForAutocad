@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        Title="Ввод параметров пласта для моделирования гравитационной аномалии" Height="430" Width="530" ResizeMode="NoResize">
+        Title="Ввод параметров пласта для моделирования геомагнитной аномалии" Height="500" Width="530" ResizeMode="NoResize">
     <Window.DataContext>
         <local:DialogWIndow_MagneticAnomalyFormationViewModel/>
     </Window.DataContext>
@@ -15,18 +15,20 @@
         <Rectangle Stroke="Black" Fill="LightGray"/>
         <Label Margin="10,10,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Расположение нулевой точки координат в среде Autocad: "/>
         <Label Margin="10,40,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Х: "/>
-        <TextBox Margin="40,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding Coord_X}" Margin="40,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="260,40,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="У: "/>
-        <TextBox Margin="290,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding Coord_Y}" Margin="290,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="10,80,0,0" Height="30" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания пласта: "/>
-        <TextBox Margin="10,110,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding Depth}" Margin="10,110,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="10,150,0,0" Height="30" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Мощность пласта: "/>
-        <TextBox Margin="10,180,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding FormationCapacity}" Margin="10,180,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="10,220,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость пласта от нулевой точки измерения: "/>
-        <TextBox Margin="10,250,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,290,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Разница между плотностью пласта и вмещающей среды: "/>
-        <TextBox Margin="10,320,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Margin="10,370,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
-        <Button Command="{Binding Close}" Margin="390,370,0,0" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Закрыть окно" />
+        <TextBox Text="{Binding DistanceFromZeroPoint}" Margin="10,250,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="10,290,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение индукции: "/>
+        <TextBox Text="{Binding InductionValue}" Margin="10,320,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="10,360,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение восприимчивости: "/>
+        <TextBox Text="{Binding SusceptibilityValue}" Margin="10,390,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Command="{Binding Calculate}" Margin="10,435,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
+        <Button Command="{Binding Close}" Margin="390,435,0,0" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Закрыть окно" />
     </Grid>
 </Window>

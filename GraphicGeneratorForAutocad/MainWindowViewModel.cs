@@ -9,6 +9,7 @@ namespace GraphicGeneratorForAutocad
     /// </summary>
     public class MainWindowViewModel : NotifyPropertyChanged
     {
+        // Директива region включена в кодовую базу для удобства
         #region output elements
         public string infoPanel;
         public string InfoPanel
