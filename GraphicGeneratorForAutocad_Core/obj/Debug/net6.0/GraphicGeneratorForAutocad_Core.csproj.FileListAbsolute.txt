@@ -1,0 +1,12 @@
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\bin\Debug\net6.0\GraphicGeneratorForAutocad_Core.deps.json
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\bin\Debug\net6.0\GraphicGeneratorForAutocad_Core.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\bin\Debug\net6.0\GraphicGeneratorForAutocad_Core.pdb
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\obj\Debug\net6.0\GraphicGeneratorForAutocad_Core.csproj.AssemblyReference.cache
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\obj\Debug\net6.0\GraphicGeneratorForAutocad_Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\obj\Debug\net6.0\GraphicGeneratorForAutocad_Core.AssemblyInfoInputs.cache
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\obj\Debug\net6.0\GraphicGeneratorForAutocad_Core.AssemblyInfo.cs
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\obj\Debug\net6.0\GraphicGeneratorForAutocad_Core.csproj.CoreCompileInputs.cache
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\obj\Debug\net6.0\GraphicGeneratorForAutocad_Core.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\obj\Debug\net6.0\refint\GraphicGeneratorForAutocad_Core.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\obj\Debug\net6.0\GraphicGeneratorForAutocad_Core.pdb
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Core\obj\Debug\net6.0\ref\GraphicGeneratorForAutocad_Core.dll

@@ -62,6 +62,28 @@ namespace GraphicGeneratorForAutocad.ViewModels
             }
         }
 
+        public double observationRoute_Y;
+        public double ObservationRoute_Y
+        {
+            get { return observationRoute_Y; }
+            set
+            {
+                observationRoute_Y = value;
+                CheckChanges();
+            }
+        }
+
+        public double observationRoute_h;
+        public double ObservationRoute_h
+        {
+            get { return observationRoute_h; }
+            set
+            {
+                observationRoute_h = value;
+                CheckChanges();
+            }
+        }
+
         public double resistanceValue;
         public double ResistanceValue
         {

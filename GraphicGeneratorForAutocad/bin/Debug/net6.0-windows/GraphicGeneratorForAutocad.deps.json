@@ -7,14 +7,41 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "GraphicGeneratorForAutocad/1.0.0": {
+        "dependencies": {
+          "GraphicGeneratorForAutocad_Core": "1.0.0",
+          "GraphicGeneratorForAutocad_Model": "1.0.0"
+        },
         "runtime": {
           "GraphicGeneratorForAutocad.dll": {}
+        }
+      },
+      "GraphicGeneratorForAutocad_Core/1.0.0": {
+        "runtime": {
+          "GraphicGeneratorForAutocad_Core.dll": {}
+        }
+      },
+      "GraphicGeneratorForAutocad_Model/1.0.0": {
+        "dependencies": {
+          "GraphicGeneratorForAutocad_Core": "1.0.0"
+        },
+        "runtime": {
+          "GraphicGeneratorForAutocad_Model.dll": {}
         }
       }
     }
   },
   "libraries": {
     "GraphicGeneratorForAutocad/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GraphicGeneratorForAutocad_Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GraphicGeneratorForAutocad_Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

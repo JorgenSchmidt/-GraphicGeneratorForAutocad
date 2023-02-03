@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "GraphicGeneratorForAutocad_Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GraphicGeneratorForAutocad_Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GraphicGeneratorForAutocad_Core.dll": {}
+        }
+      },
+      "GraphicGeneratorForAutocad_Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "GraphicGeneratorForAutocad_Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GraphicGeneratorForAutocad_Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GraphicGeneratorForAutocad_Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "GraphicGeneratorForAutocad_Core/1.0.0": {
+      "type": "project",
+      "path": "../GraphicGeneratorForAutocad_Core/GraphicGeneratorForAutocad_Core.csproj",
+      "msbuildProject": "../GraphicGeneratorForAutocad_Core/GraphicGeneratorForAutocad_Core.csproj"
+    },
+    "GraphicGeneratorForAutocad_Model/1.0.0": {
+      "type": "project",
+      "path": "../GraphicGeneratorForAutocad_Model/GraphicGeneratorForAutocad_Model.csproj",
+      "msbuildProject": "../GraphicGeneratorForAutocad_Model/GraphicGeneratorForAutocad_Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "GraphicGeneratorForAutocad_Core >= 1.0.0",
+      "GraphicGeneratorForAutocad_Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Joe\\.nuget\\packages\\": {}
@@ -33,7 +71,14 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\codes\\C#\\КМГ_КП_ГрГ\\-GraphicGeneratorForAutocad\\GraphicGeneratorForAutocad_Core\\GraphicGeneratorForAutocad_Core.csproj": {
+              "projectPath": "D:\\codes\\C#\\КМГ_КП_ГрГ\\-GraphicGeneratorForAutocad\\GraphicGeneratorForAutocad_Core\\GraphicGeneratorForAutocad_Core.csproj"
+            },
+            "D:\\codes\\C#\\КМГ_КП_ГрГ\\-GraphicGeneratorForAutocad\\GraphicGeneratorForAutocad_Model\\GraphicGeneratorForAutocad_Model.csproj": {
+              "projectPath": "D:\\codes\\C#\\КМГ_КП_ГрГ\\-GraphicGeneratorForAutocad\\GraphicGeneratorForAutocad_Model\\GraphicGeneratorForAutocad_Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

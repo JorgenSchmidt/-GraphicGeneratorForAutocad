@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        Title="Ввод параметров пласта для моделирования аномалии электрического потенциала" Height="500" Width="530" ResizeMode="NoResize">
+        Title="Ввод параметров пласта для моделирования аномалии электрического потенциала" Height="550" Width="530" ResizeMode="NoResize">
     <Window.DataContext>
         <local:DialogWIndow_ElectricAnomalyPointViewModel/>
     </Window.DataContext>
@@ -18,17 +18,22 @@
         <TextBox Text="{Binding Coord_X}" Margin="40,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="260,40,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="У: "/>
         <TextBox Text="{Binding Coord_Y}" Margin="290,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,80,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость источника тока от нулевой точки измерения (a): "/>
+        <Label Margin="10,80,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость источника тока от нулевой точки измерения (a, м): "/>
         <TextBox Text="{Binding DistanceFromZeroPoint}" Margin="10,110,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,150,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость источника тока от оси Х (b): "/>
+        <Label Margin="10,150,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость источника тока от оси Х (b, м): "/>
         <TextBox Text="{Binding DistanceFromXAxis}" Margin="10,180,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,220,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания источника тока (c): "/>
+        <Label Margin="10,220,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания источника тока (c, м): "/>
         <TextBox Text="{Binding OccurrenceDepth}" Margin="10,250,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,290,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение сопротивления: "/>
-        <TextBox Text="{Binding ResistanceValue}" Margin="10,320,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,360,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение силы тока: "/>
-        <TextBox Text="{Binding ElectricStrength}" Margin="10,390,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Margin="10,435,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
-        <Button Command="{Binding Close}" Margin="390,435,0,0" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Закрыть окно" />
+        <Label Margin="10,290,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Координаты трассы наблюдений (м): "/>
+        <Label Margin="10,320,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Y: "/>
+        <TextBox Text="{Binding ObservationRoute_Y}" Margin="40,320,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="260,320,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="h: "/>
+        <TextBox Text="{Binding ObservationRoute_h}" Margin="290,320,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="10,360,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение сопротивления (ρ, Ом*м): "/>
+        <TextBox Text="{Binding ResistanceValue}" Margin="10,390,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="10,430,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение силы тока (J, A): "/>
+        <TextBox Text="{Binding ElectricStrength}" Margin="10,460,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Margin="10,500,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
+        <Button Command="{Binding Close}" Margin="390,500,0,0" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Закрыть окно" />
     </Grid>
 </Window>

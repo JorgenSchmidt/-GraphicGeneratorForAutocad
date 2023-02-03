@@ -14,4 +14,9 @@
     <Folder Include="Views\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GraphicGeneratorForAutocad_Core\GraphicGeneratorForAutocad_Core.csproj" />
+    <ProjectReference Include="..\GraphicGeneratorForAutocad_Model\GraphicGeneratorForAutocad_Model.csproj" />
+  </ItemGroup>
+
 </Project>

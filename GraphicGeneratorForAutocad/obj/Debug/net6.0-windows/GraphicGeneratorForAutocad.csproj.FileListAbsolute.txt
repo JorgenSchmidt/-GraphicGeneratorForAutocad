@@ -32,3 +32,8 @@ D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAu
 D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad\obj\Debug\net6.0-windows\GraphicGeneratorForAutocad.pdb
 D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad\obj\Debug\net6.0-windows\GraphicGeneratorForAutocad.genruntimeconfig.cache
 D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad\obj\Debug\net6.0-windows\ref\GraphicGeneratorForAutocad.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad\bin\Debug\net6.0-windows\GraphicGeneratorForAutocad_Core.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad\bin\Debug\net6.0-windows\GraphicGeneratorForAutocad_Model.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad\bin\Debug\net6.0-windows\GraphicGeneratorForAutocad_Core.pdb
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad\bin\Debug\net6.0-windows\GraphicGeneratorForAutocad_Model.pdb
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad\obj\Debug\net6.0-windows\GraphicGeneratorForAutocad.csproj.CopyComplete

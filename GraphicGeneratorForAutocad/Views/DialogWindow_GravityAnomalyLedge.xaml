@@ -18,13 +18,13 @@
         <TextBox Text="{Binding Coord_X}" Margin="40,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="260,40,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="У: "/>
         <TextBox Text="{Binding Coord_Y}" Margin="290,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,80,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания нижней кромки пласта: "/>
+        <Label Margin="10,80,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания нижней кромки пласта (Н, м): "/>
         <TextBox Text="{Binding LowerEdgeDepth}" Margin="10,110,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,150,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания верхней кромки пласта: "/>
+        <Label Margin="10,150,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания верхней кромки пласта (h, м): "/>
         <TextBox Text="{Binding UpperEdgeDepth}" Margin="10,180,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,220,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость пласта от нулевой точки измерения: "/>
+        <Label Margin="10,220,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость выступа от нулевой точки измерения (d,м): "/>
         <TextBox Text="{Binding DistanceFromZeroPoint}" Margin="10,250,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,290,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Разница между плотностью пласта и вмещающей среды: "/>
+        <Label Margin="10,290,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Разница между плотностью пласта и вмещающей среды (σ, г/см3): "/>
         <TextBox Text="{Binding DensitiesDifference}" Margin="10,320,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Button Command="{Binding Calculate}"  Margin="10,370,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
         <Button Command="{Binding Close}" Margin="390,370,0,0" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Закрыть окно" />

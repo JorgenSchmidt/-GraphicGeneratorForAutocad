@@ -1,0 +1,15 @@
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\bin\Debug\net6.0\GraphicGeneratorForAutocad_Model.deps.json
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\bin\Debug\net6.0\GraphicGeneratorForAutocad_Model.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\bin\Debug\net6.0\GraphicGeneratorForAutocad_Model.pdb
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\bin\Debug\net6.0\GraphicGeneratorForAutocad_Core.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\bin\Debug\net6.0\GraphicGeneratorForAutocad_Core.pdb
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\GraphicGeneratorForAutocad_Model.csproj.AssemblyReference.cache
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\GraphicGeneratorForAutocad_Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\GraphicGeneratorForAutocad_Model.AssemblyInfoInputs.cache
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\GraphicGeneratorForAutocad_Model.AssemblyInfo.cs
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\GraphicGeneratorForAutocad_Model.csproj.CoreCompileInputs.cache
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\GraphicGeneratorForAutocad_Model.csproj.CopyComplete
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\GraphicGeneratorForAutocad_Model.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\refint\GraphicGeneratorForAutocad_Model.dll
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\GraphicGeneratorForAutocad_Model.pdb
+D:\codes\C#\КМГ_КП_ГрГ\-GraphicGeneratorForAutocad\GraphicGeneratorForAutocad_Model\obj\Debug\net6.0\ref\GraphicGeneratorForAutocad_Model.dll

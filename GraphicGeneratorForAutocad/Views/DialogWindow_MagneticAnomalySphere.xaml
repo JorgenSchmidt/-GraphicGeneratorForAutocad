@@ -18,15 +18,15 @@
         <TextBox Text="{Binding Coord_X}" Margin="40,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="260,40,0,0" Height="30" Width="20" HorizontalAlignment="Left" VerticalAlignment="Top" Content="У: "/>
         <TextBox Text="{Binding Coord_Y}" Margin="290,40,0,0" Height="30" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,80,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания центра шара: "/>
+        <Label Margin="10,80,0,0" Height="30" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Глубина залегания центра шара (h, м): "/>
         <TextBox Text="{Binding Depth}" Margin="10,110,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,150,0,0" Height="30" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Радиус шара: "/>
+        <Label Margin="10,150,0,0" Height="30" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Радиус шара (R, м): "/>
         <TextBox Text="{Binding SphereRadius}" Margin="10,180,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,220,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость центра шара от нулевой точки измерения: "/>
+        <Label Margin="10,220,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Удалённость центра шара от нулевой точки измерения (L, м): "/>
         <TextBox Text="{Binding DistanceFromZeroPoint}" Margin="10,250,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,290,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение индукции: "/>
+        <Label Margin="10,290,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение индукции (В, нТл): "/>
         <TextBox Text="{Binding InductionValue}" Margin="10,320,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Margin="10,360,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение восприимчивости: "/>
+        <Label Margin="10,360,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение восприимчивости (χ, ед. Си): "/>
         <TextBox Text="{Binding SusceptibilityValue}" Margin="10,390,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Button Command="{Binding Calculate}" Margin="10,435,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
         <Button Command="{Binding Close}" Margin="390,435,0,0" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Закрыть окно" />    
