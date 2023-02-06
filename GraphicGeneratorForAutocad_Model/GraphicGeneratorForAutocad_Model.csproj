@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="MakeCommandChainService\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\GraphicGeneratorForAutocad_Core\GraphicGeneratorForAutocad_Core.csproj" />
   </ItemGroup>
 

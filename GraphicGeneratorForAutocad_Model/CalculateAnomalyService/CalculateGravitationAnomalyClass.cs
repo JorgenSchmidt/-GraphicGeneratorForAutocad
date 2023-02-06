@@ -11,18 +11,18 @@ namespace GraphicGeneratorForAutocad_Model.CalculateAnomalyService
         {
             // Инициализация объекта с описанием и значениями аномалии
             AnomalyDescription Answer = new AnomalyDescription()
-            {
-                Description = "Гравитационная аномалия для шара",
+            {//Ед. изм: x - X, м., y - Z,H,T, нТл.
+                Description = "Гравитационная аномалия для шара. Ед. изм: x - X, м., y - σ, г/см3.",
                 ValuesList = new List<AnomalyValues>()
             };
             // Расчёт значений аномалии
             var Vals = new List<AnomalyValue>();
-            for (var x = DistanceFromZero - 600; x <= DistanceFromZero + 600; x++ )
+            for (var x = DistanceFromZero - 600; x <= DistanceFromZero + 600; x = x + 50)
             {
                 var value = 0.00667 * DensitiesDifference 
                     * (4 * Math.PI * Math.Pow(Radius, 3)) / 3 
                     * (Depth / Math.Sqrt(Math.Pow(Math.Pow(x - DistanceFromZero, 2) + Math.Pow(Depth, 2), 3)) );
-                Vals.Add(new AnomalyValue { Coord = x, Value = value});
+                Vals.Add(new AnomalyValue { Coord = x, Value = Math.Round(value, CalculateServiceConstants.RoundValue) });
             }
             // Загрузка данных в целевой объект
             Answer.ValuesList.Add( new AnomalyValues() { Values = Vals } );
@@ -30,19 +30,19 @@ namespace GraphicGeneratorForAutocad_Model.CalculateAnomalyService
         }
 
         /// <summary>
-        /// Рассчитывает гравитационную аномалию над выступом 
+        /// Рассчитывает гравитационную аномалию над уступом 
         /// </summary>
         public static AnomalyDescription CalculateAnomalyForLedge(double DepthLower, double DepthHigher, double DistanceFromZero, double DensitiesDifference)
         {
             // Инициализация объекта с описанием и значениями аномалии
             AnomalyDescription Answer = new AnomalyDescription()
             {
-                Description = "Гравитационная аномалия для уступа",
+                Description = "Гравитационная аномалия для уступа.  Ед. изм: x - X, м., y - σ, г/см3.",
                 ValuesList = new List<AnomalyValues>()
             };
             // Расчёт значений аномалии
             var Vals = new List<AnomalyValue>();
-            for (var x = DistanceFromZero - 600; x <= DistanceFromZero + 600; x++)
+            for (var x = DistanceFromZero - 600; x <= DistanceFromZero + 600; x = x + 50)
             {
                 var value = 0.00667 * DensitiesDifference * (
                         Math.PI * (DepthLower - DepthHigher)
@@ -54,7 +54,7 @@ namespace GraphicGeneratorForAutocad_Model.CalculateAnomalyService
                                 (Math.Pow(x - DistanceFromZero, 2) + Math.Pow(DepthHigher, 2))
                             )
                     );
-                Vals.Add(new AnomalyValue { Coord = x, Value = value });
+                Vals.Add(new AnomalyValue { Coord = x, Value = Math.Round(value, CalculateServiceConstants.RoundValue) });
             }
             // Загрузка данных в целевой объект
             Answer.ValuesList.Add(new AnomalyValues() { Values = Vals });
