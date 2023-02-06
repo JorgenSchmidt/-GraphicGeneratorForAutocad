@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphicGeneratorForAutocad_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphicGeneratorForAutocad_Core", "..\GraphicGeneratorForAutocad_Core\GraphicGeneratorForAutocad_Core.csproj", "{C5DC5532-0B25-4611-94C2-9220B606FA0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicGeneratorForAutocad_Test", "..\GraphicGeneratorForAutocad_Test\GraphicGeneratorForAutocad_Test.csproj", "{D52F115F-AF45-4DFD-8303-662DDBAF7426}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{C5DC5532-0B25-4611-94C2-9220B606FA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5DC5532-0B25-4611-94C2-9220B606FA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5DC5532-0B25-4611-94C2-9220B606FA0C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D52F115F-AF45-4DFD-8303-662DDBAF7426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D52F115F-AF45-4DFD-8303-662DDBAF7426}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D52F115F-AF45-4DFD-8303-662DDBAF7426}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D52F115F-AF45-4DFD-8303-662DDBAF7426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
