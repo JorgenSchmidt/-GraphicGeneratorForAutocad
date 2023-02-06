@@ -23,12 +23,12 @@
         <Label Margin="640,3,0,0" Height="30" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Информационная панель: "/>
         <TextBox Text="{Binding InfoPanel}" Margin="640,30,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True"/>
         <Label Margin="640,70,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Введите путь по которому необходимо сохранить файл с командами: "/>
-        <TextBox Margin="640,100,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding Path}" Margin="640,100,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="640,140,0,0" Height="30" Width="500" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Введите название файла в который необходимо сохранить данные (без расширения): "/>
-        <TextBox Margin="640,170,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding FileName}" Margin="640,170,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="640,210,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Название графика + единицы измерения: "/>
-        <TextBox Margin="640,240,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True"/>
+        <TextBox Text="{Binding GraphicDescription}" Margin="640,240,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True"/>
         <Label Margin="640,280,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Параметры подписи осей X и Y: "/>
-        <TextBox Margin="640,310,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True"/>
+        <TextBox Text="{Binding AxisInfo}" Margin="640,310,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True"/>
     </Grid>
 </Window>

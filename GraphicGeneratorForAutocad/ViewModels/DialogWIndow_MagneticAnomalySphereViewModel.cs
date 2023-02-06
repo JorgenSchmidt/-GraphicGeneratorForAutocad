@@ -1,6 +1,12 @@
 ﻿using GraphicGeneratorForAutocad.AppService;
 using GraphicGeneratorForAutocad.Service;
 using GraphicGeneratorForAutocad.ViewModelService;
+using GraphicGeneratorForAutocad_Core.Entities;
+using GraphicGeneratorForAutocad_Model.CalculateAnomalyService;
+using GraphicGeneratorForAutocad_Model.MakeCommandChainService;
+using System.IO;
+using System.Windows;
+using System;
 
 namespace GraphicGeneratorForAutocad.ViewModels
 {
@@ -91,9 +97,38 @@ namespace GraphicGeneratorForAutocad.ViewModels
             get
             {
                 return new Command(
-                    (obj) =>
+                    async (obj) =>
                     {
+                        try
+                        {
+                            if (InductionValue > 0 && SusceptibilityValue > 0)
+                            {
+                                AnomalyDescription Desc = CalculateMagneticAnomalyClass.CalculateMagneticAnomalyForSphere(SphereRadius, SphereRadius, DistanceFromZeroPoint, InductionValue, SusceptibilityValue);
+                                AppOutput Ans = CommandsMakerForAnomalies.MakeCommandsForAnomalies(Coord_X, Coord_Y, Desc);
 
+                                DataInteractor.GraphicDescription = Ans.GetGraphicParameters();
+                                DataInteractor.AxisInfo = Ans.GetAxisSignatureParameters();
+                                DataInteractor.Info = "Успешно";
+
+                                using (StreamWriter writer = new StreamWriter(DataInteractor.Path + "\\" + DataInteractor.FileName + ".txt", false))
+                                {
+                                    await writer.WriteLineAsync(Ans.GetCommandChain());
+                                }
+
+                                DialogWindowsOperator.DialogWindow_MagneticAnomalySphere.Close();
+                                DialogWindowsOperator.DialogWindow_MagneticAnomalySphere = null;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Значение индукции или магнитной восприимчивости должно быть больше 0.");
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            DataInteractor.Info = e.ToString();
+                            DialogWindowsOperator.DialogWindow_MagneticAnomalySphere.Close();
+                            DialogWindowsOperator.DialogWindow_MagneticAnomalySphere = null;
+                        }
                     }
                 );
             }

@@ -1,6 +1,13 @@
 ﻿using GraphicGeneratorForAutocad.AppService;
 using GraphicGeneratorForAutocad.Service;
 using GraphicGeneratorForAutocad.ViewModelService;
+using GraphicGeneratorForAutocad_Core.Entities;
+using GraphicGeneratorForAutocad_Model.CalculateAnomalyService;
+using GraphicGeneratorForAutocad_Model.MakeCommandChainService;
+using System;
+using System.IO;
+using System.Windows;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace GraphicGeneratorForAutocad.ViewModels
 {
@@ -112,9 +119,38 @@ namespace GraphicGeneratorForAutocad.ViewModels
             get
             {
                 return new Command(
-                    (obj) =>
+                    async (obj) =>
                     {
+                        try
+                        {
+                            if (ResistanceValue > 0 && ElectricStrength > 0)
+                            {
+                                AnomalyDescription Desc = CalculateElectricAnomalyClass.CalculateElectricAnomalyForPoint(DistanceFromZeroPoint, DistanceFromXAxis, OccurrenceDepth, ObservationRoute_Y, ObservationRoute_h, ResistanceValue, ElectricStrength);
+                                AppOutput Ans = CommandsMakerForAnomalies.MakeCommandsForAnomalies(Coord_X, Coord_Y, Desc);
 
+                                DataInteractor.GraphicDescription = Ans.GetGraphicParameters();
+                                DataInteractor.AxisInfo = Ans.GetAxisSignatureParameters();
+                                DataInteractor.Info = "Успешно";
+
+                                using (StreamWriter writer = new StreamWriter(DataInteractor.Path + "\\" + DataInteractor.FileName + ".txt", false))
+                                {
+                                    await writer.WriteLineAsync(Ans.GetCommandChain());
+                                }
+
+                                DialogWindowsOperator.DialogWindow_ElectricAnomalyPoint.Close();
+                                DialogWindowsOperator.DialogWindow_ElectricAnomalyPoint = null;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Значение сопротивления и силы тока должны быть больше, чем 0.");
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            DataInteractor.Info = e.ToString();
+                            DialogWindowsOperator.DialogWindow_ElectricAnomalyPoint.Close();
+                            DialogWindowsOperator.DialogWindow_ElectricAnomalyPoint = null;
+                        }
                     }
                 );
             }

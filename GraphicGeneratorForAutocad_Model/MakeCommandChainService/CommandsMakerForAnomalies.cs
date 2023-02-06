@@ -69,7 +69,7 @@ namespace GraphicGeneratorForAutocad_Model.MakeCommandChainService
             axisSignatureParameters += "Ось Х идёт от " + x_Min + " до " + (x_Max - 0.5 * ElementCorretionKoefficient).ToString() + " с шагом " + ((Math.Abs(x_Max) + Math.Abs(x_Min)) / 12).ToString() + "; ";
 
             // Составление списка команд для отрисовки делений графика по оси y
-            for(var i = y_Min; i < y_Max - 0.5 * ElementCorretionKoefficient; i+= (Math.Abs(y_Max) + Math.Abs(y_Min)) / 12 )
+            for(var i = y_Min; i < y_Max; i+= (Math.Abs(y_Max) + Math.Abs(y_Min)) / 12 )
             {
                 chain += "_line "
                     + Coord_X.ToString().Replace(",", ".") + "," + (Math.Round(i * CorrectionKoefficient + Coord_Y,1)).ToString().Replace(",", ".")
@@ -78,7 +78,7 @@ namespace GraphicGeneratorForAutocad_Model.MakeCommandChainService
             chain += " _c _c     \n";
 
             // Составление параметров для оси Y
-            axisSignatureParameters += "Ось Y идёт от " + y_Min + " до " + (y_Max - 0.5 * ElementCorretionKoefficient).ToString() + " с шагом " + ((Math.Abs(y_Max) + Math.Abs(y_Min)) / 12).ToString() + ". ";
+            axisSignatureParameters += "Ось Y идёт от " + y_Min + " до " + y_Max.ToString() + " с шагом " + ((Math.Abs(y_Max) + Math.Abs(y_Min)) / 12).ToString() + ". ";
 
             // Составление списка команд для отрисовки аномалии на графике
             foreach (var currentList in Description.ValuesList)

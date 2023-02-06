@@ -33,7 +33,7 @@
         <TextBox Text="{Binding ResistanceValue}" Margin="10,390,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Margin="10,430,0,0" Height="30" Width="380" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Значение силы тока (J, A): "/>
         <TextBox Text="{Binding ElectricStrength}" Margin="10,460,0,0" Height="30" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Margin="10,500,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
+        <Button Command="{Binding Calculate}" Margin="10,500,0,0" Height="30" Width="170" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Составить цепочку команд" />
         <Button Command="{Binding Close}" Margin="390,500,0,0" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Закрыть окно" />
     </Grid>
 </Window>

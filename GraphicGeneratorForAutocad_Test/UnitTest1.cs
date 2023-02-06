@@ -11,8 +11,8 @@ namespace GraphicGeneratorForAutocad_Test
         [TestMethod]
         public void TestMethod1()
         {
-            AnomalyDescription description = CalculateMagneticAnomalyClass.CalculateMagneticAnomalyForSphere(60,40,0,54000,0.005);
-            Assert.AreEqual(CommandsMakerForAnomalies.MakeCommandsForAnomalies(15,25,description),1);
+            var Ds = CalculateElectricAnomalyClass.CalculateElectricAnomalyForPoint(200, 0, -100, 0, 200, 2000, 2);
+            Assert.AreEqual(CommandsMakerForAnomalies.MakeCommandsForAnomalies(0,0, Ds),1);
         }
     }
 }
