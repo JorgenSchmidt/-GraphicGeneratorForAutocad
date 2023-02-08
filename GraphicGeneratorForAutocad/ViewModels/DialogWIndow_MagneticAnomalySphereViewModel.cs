@@ -103,7 +103,7 @@ namespace GraphicGeneratorForAutocad.ViewModels
                         {
                             if (InductionValue > 0 && SusceptibilityValue > 0)
                             {
-                                AnomalyDescription Desc = CalculateMagneticAnomalyClass.CalculateMagneticAnomalyForSphere(SphereRadius, SphereRadius, DistanceFromZeroPoint, InductionValue, SusceptibilityValue);
+                                AnomalyDescription Desc = CalculateMagneticAnomalyClass.CalculateMagneticAnomalyForSphere(Depth, SphereRadius, DistanceFromZeroPoint, InductionValue, SusceptibilityValue);
                                 AppOutput Ans = CommandsMakerForAnomalies.MakeCommandsForAnomalies(Coord_X, Coord_Y, Desc);
 
                                 DataInteractor.GraphicDescription = Ans.GetGraphicParameters();

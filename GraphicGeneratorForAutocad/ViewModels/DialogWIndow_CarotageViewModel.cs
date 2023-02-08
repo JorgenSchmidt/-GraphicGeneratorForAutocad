@@ -5,6 +5,9 @@ using System.Windows;
 
 namespace GraphicGeneratorForAutocad.ViewModels
 {
+    /// <summary>
+    /// Not implemented
+    /// </summary>
     public class DialogWIndow_CarotageViewModel : NotifyPropertyChanged
     {
         #region parameters

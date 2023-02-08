@@ -19,12 +19,12 @@ namespace GraphicGeneratorForAutocad_Model.CalculateAnomalyService
             var VerticalValues = new List<AnomalyValue>();
             var HorizontalValues = new List<AnomalyValue>();
             var NormalValues = new List<AnomalyValue>();
-            var M = InductionValue * SusceptibilityValue * ((4 * Math.PI * Math.Pow(Radius, 3)) / 3);
+            double M = (InductionValue * SusceptibilityValue * 4 * Math.PI * Math.Pow(Radius, 3)/3);
             for (var x = DistanceFromZero - 600; x <= DistanceFromZero + 600; x = x + 50)
             {
                 var vertVal = (M * (2 * Math.Pow(Depth, 2) - Math.Pow(x - DistanceFromZero, 2))) / Math.Pow(Math.Pow(Depth, 2) + Math.Pow(x - DistanceFromZero, 2), 2.5);
                 VerticalValues.Add(new AnomalyValue { Coord = x, Value = Math.Round(vertVal, CalculateServiceConstants.RoundValue) });
-                var horVal = (3 * M * Depth * x) / Math.Pow(Math.Pow(Depth, 2) + Math.Pow(x - DistanceFromZero, 2), 2.5);
+                var horVal = (3 * M * Depth * (x - DistanceFromZero)) / Math.Pow(Math.Pow(Depth, 2) + Math.Pow(x - DistanceFromZero, 2), 2.5);
                 HorizontalValues.Add(new AnomalyValue { Coord = x, Value = Math.Round(horVal, CalculateServiceConstants.RoundValue) });
                 var normVal = Math.Sqrt(Math.Pow(vertVal,2) + Math.Pow(horVal,2));
                 NormalValues.Add(new AnomalyValue { Coord = x, Value = Math.Round(normVal, CalculateServiceConstants.RoundValue) });

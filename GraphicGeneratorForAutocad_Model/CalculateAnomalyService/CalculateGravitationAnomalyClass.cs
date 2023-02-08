@@ -12,7 +12,7 @@ namespace GraphicGeneratorForAutocad_Model.CalculateAnomalyService
             // Инициализация объекта с описанием и значениями аномалии
             AnomalyDescription Answer = new AnomalyDescription()
             {//Ед. изм: x - X, м., y - Z,H,T, нТл.
-                Description = "Гравитационная аномалия для шара. Ед. изм: x - X, м., y - σ, г/см3.",
+                Description = "Гравитационная аномалия для шара. Ед. изм: x - X, м., y - dg, мГал.",
                 ValuesList = new List<AnomalyValues>()
             };
             // Расчёт значений аномалии
@@ -37,7 +37,7 @@ namespace GraphicGeneratorForAutocad_Model.CalculateAnomalyService
             // Инициализация объекта с описанием и значениями аномалии
             AnomalyDescription Answer = new AnomalyDescription()
             {
-                Description = "Гравитационная аномалия для уступа.  Ед. изм: x - X, м., y - σ, г/см3.",
+                Description = "Гравитационная аномалия для уступа.  Ед. изм: x - X, м., y - dg, мГал.",
                 ValuesList = new List<AnomalyValues>()
             };
             // Расчёт значений аномалии

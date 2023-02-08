@@ -8,6 +8,9 @@ namespace GraphicGeneratorForAutocad.AppService
     /// </summary>
     public class DialogWindowsOperator : Window
     {
+        /// <summary>
+        /// Not implemented
+        /// </summary>
         public static DialogWindow_Carotage DialogWindow_Carotage;
         public static DialogWindow_ElectricAnomalyPoint DialogWindow_ElectricAnomalyPoint;
         public static DialogWindow_GravityAnomalySphere DialogWindow_GravityAnomalySphere;
